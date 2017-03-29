@@ -1,0 +1,38 @@
+{
+    "manifest_version": 2,
+    "name": "网络监控",
+    "version": "1.0",
+    "description": "网络请求监控程序",
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "19": "images/icon19.png",
+            "38": "images/icon38.png"
+        },
+        "default_title": "网络监控程序",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["js/net-monitor.js"]
+        }
+    ],
+    "content_security_policy": "script-src 'self' https://cdn.bootcss.com/; object-src 'self'",
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>"
+    ],
+    "background": {
+        "scripts": [
+            "libs/parse.js",
+            "js/main.js",
+            "js/requests-counter.js"
+        ]
+    }
+}
