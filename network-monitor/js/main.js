@@ -10,6 +10,7 @@ class PageTextContent extends Parse.Object {
 }
 
 function echo(message, sender, sendResponse) {
+    if(!message.url || !message.pg) return;
     checkIfNotExists(message).then(success => {
         if (success) {
             var pg = new PageTextContent();
