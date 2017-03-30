@@ -8,7 +8,6 @@ doctype = {
 let msg = {
     url: location.href,
     doctype,
-    dummyObject: {level:1},
     pg: Array
         .prototype
         .map

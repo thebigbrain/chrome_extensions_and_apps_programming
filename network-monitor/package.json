@@ -4,11 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon ./server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "parse": "^1.9.2",
+    "parse-dashboard": "^1.0.25",
+    "parse-server": "^2.3.7"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "nodemon": "^1.11.0"
   }
 }
