@@ -216,3 +216,4 @@ pip-log.txt
 /logs
 /network-monitor/node_modules
 node_modules
+/network-monitor/logs
