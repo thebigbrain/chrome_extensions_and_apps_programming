@@ -20,7 +20,7 @@ function conver2str(counter) {
     if (counter + 1 > 1000 * 1000) {
         text = parseInt(counter / 100000) / 10 + 'M';
     } else if (counter + 1 > 1000) {
-        text = parseInt(counter / 100) / 10 + 'M';
+        text = parseInt(counter / 100) / 10 + 'K';
     } else {
         text = counter;
     }
